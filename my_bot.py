@@ -55,6 +55,6 @@ def putInline(c):
         bot.edit_message_text('Вы заказали ' + str(c.data[12:]) + ' грамм пиццы', parse_mode="HTML", chat_id=c.message.chat.id, message_id=c.message.message_id)
         bot.edit_message_reply_markup(chat_id=c.message.chat.id, message_id=c.message.message_id, reply_markup=mainMenuInline())
         bot.send_message(459531155, """Пользователь: @""" + str(c.message.chat.username) + """\r
-                Заказал """ + str(c.data[12:]) + """ грамм пиццы""", parse_mode="HTML")
+        Заказал """ + str(c.data[12:]) + """ грамм пиццы""", parse_mode="HTML")
 
 bot.polling()
